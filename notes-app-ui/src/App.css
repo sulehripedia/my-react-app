@@ -1,0 +1,223 @@
+body{
+    background-color: #2d628c;
+}
+p{
+     font-family: Century Gothic, sans-serif;
+
+     @view-transition {
+  navigation: auto;
+}
+
+}
+h1{
+        font-family: Century Gothic, sans-serif;
+    }
+    .main-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30vh; /* leave space for video */
+  color: white;
+}
+.alone h1{
+            font-size: 1.8rem;
+             letter-spacing: .14rem;
+              text-transform: uppercase;
+    font-weight:500;
+    padding: 0px 2rem;
+    font-family: Century Gothic, sans-serif;
+    color: white;
+
+}
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 50px;
+  padding-bottom: 4px;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  position: relative;
+}
+
+.link-button:hover {
+  border-color: #2d628c;
+  color: #2d628c;
+}
+
+.arrow-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #2d628c;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  transition: all 0.3s ease;
+}
+
+.arrow-icon {
+  width: 12px;
+  height: 12px;
+  stroke-width: 2;
+}
+
+.link-button:hover .arrow-circle {
+  background-color: #2d628c;
+  color: white;
+  transform: translateX(4px);
+}
+
+.home-logo{
+    min-height: 50vh;
+    padding:2rem 4rem;
+}
+.home-logo img{
+    width: 100%;
+    height: 100%;
+}
+.hero {
+  min-height: 100vh;
+  padding: 2rem;
+}
+.hero h1{
+    font-size: 2.25rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: .09rem;
+    font-weight:500;
+    font-family: Century Gothic, sans-serif;
+    color: white;
+
+}
+.section h1{
+      font-size: 2.25rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: .09rem;
+    font-weight:500;
+    font-family: Century Gothic, sans-serif;
+    color: white;
+
+}
+.trading-h1 h1{
+    font-size: 2.25rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: .09rem;
+    font-weight:500;
+    font-family: Century Gothic, sans-serif;
+    color: white;   
+}
+.trading-h1 p{
+    padding-right: 550px;
+    font-size:1.5rem ;
+    padding-top: 200px;
+    line-height: 1.5;   
+}
+@media (min-width:600px){
+    .hero h1{
+        text-align: left;
+        padding-left: 400px;
+        padding-right: 50px;
+        font-size: 3rem;
+    }
+    .hero p{
+        padding-right: 550px;
+        padding-left: 100px;
+        font-size:1.5rem ;
+        padding-top: 200px;
+        line-height: 1.5;
+    }
+    .section h1{
+        text-align: left;
+        padding-right: 200px;
+        padding-left:100px;
+        padding-top: 250px;
+        font-size: 3rem;
+        color: white;
+
+
+    }
+    .section p{
+        padding-left: 550px;
+        color: white;
+        font-size:1.5rem ;
+        padding-top: 100px;
+        line-height: 1.5;
+    }
+    .trading-h1 h1{
+        text-align: left;
+        padding-right: 550px;
+        font-size: 3rem;
+        color: white;
+    }
+    .trading-h1 p{
+      padding-right: 550px;
+        font-size:1.5rem ;
+        padding-top: 500px;
+        line-height: 1.5;
+}
+.alone h1{
+            font-size: 3.125rem;
+             letter-spacing: .14rem;
+
+}
+/* .trading-h1 a{
+     margin-right: 550px;
+     font-size: 0.7rem ;
+     text-decoration: none;
+     margin-top: 50px;
+     padding-bottom:10px;
+     color: white;
+     line-height: 1.5;
+     border-bottom: 3px solid white;
+    text-transform: uppercase;
+    letter-spacing: .09rem;
+    font-weight:600;
+    font-family: Century Gothic, sans-serif;
+} */
+    /* .hero a{
+        margin-right: 550px;
+        margin-left: 100px;
+        font-size: 0.7rem ;
+        margin-top: 50px;
+        padding-bottom:10px;
+        line-height: 1.5;
+    } */
+}
+.hero p{
+    justify-content: center;
+    letter-spacing: .09rem;
+    color: white;
+    font-weight:500;
+    font-family: Century Gothic, sans-serif;
+}
+/* .hero a{
+    border-bottom: 3px solid white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .09rem;
+    font-weight:600;
+    font-family: Century Gothic, sans-serif;
+    color: white;
+} */
+.section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-size: 1.25rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
