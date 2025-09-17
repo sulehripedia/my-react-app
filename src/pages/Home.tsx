@@ -6,7 +6,6 @@ import IntroSection from "../components/IntroSection";
 import SectorsGrid from "../components/SectorsGrid";
 import HeritageSection from "../components/HeritageSection";
 import SectorPopup from "../components/SectorPopup";
-
 const Home = () => {
   const [activeSector, setActiveSector] = useState<null | string>(null);
 

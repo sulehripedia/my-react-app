@@ -1,0 +1,61 @@
+.tabs-section {
+  padding: 4rem 2rem;
+  background: transparent;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  opacity: 0.6; /* Default for inactive */
+
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  opacity: 1; /* Active tab full opacity */
+}
+
+.tab-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: white;
+  opacity: 1;
+  transition: width 0.3s ease;
+}
+
+.tab-button.active::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.tab-button:hover {
+  opacity: 1;
+}
+
+.tab-content {
+  max-width: 700px;
+  font-size: 1.2rem;
+  color: white;
+  text-align: left;
+  line-height: 1.7;
+}
