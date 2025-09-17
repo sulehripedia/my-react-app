@@ -1,0 +1,177 @@
+/* src/components/ProjectTimeline.css */
+.timeline-section {
+  background-color: #2d628c;
+  padding: 5rem 2rem;
+  position: relative;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.timeline-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: transparent;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  padding: 2rem;
+  position: relative;
+  width: 50%;
+  animation: fadeInUp 0.6s ease;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item .content {
+  background-color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .content {
+  transform: translateY(-6px);
+}
+
+.timeline-item.left .content::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline-item.right .content::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+}
+
+.content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2d628c;
+  font-weight: 700;
+}
+
+.content h4 {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a3e5c;
+}
+
+.content p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.media-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.media-item {
+  width: 120px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.media-item img,
+.media-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.media-visible {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
+.media-hidden {
+  opacity: 0;
+}
+
+.timeline-item:hover .media-item {
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 8px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-item.right,
+  .timeline-item.left {
+    left: 0;
+  }
+
+  .timeline-item .content::after {
+    left: -10px !important;
+    right: auto !important;
+    border-color: transparent white transparent transparent !important;
+  }
+}

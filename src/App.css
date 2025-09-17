@@ -1,0 +1,126 @@
+/* General */
+.full-screen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.main-content {
+  position: relative;
+  z-index: 2; /* above video */
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+p, blockquote {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.cta-group {
+  margin-top: 1.5rem;
+}
+
+.cta-btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: #e63946;
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.cta-btn:hover {
+  background: #ff4d5a;
+}
+
+.cta-btn.outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.cta-btn.outline:hover {
+  background: white;
+  color: black;
+}
+
+/* Sectors */
+.sectors-wrapper {
+  width: 100%;
+}
+
+.sector-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.sector-card {
+  background: rgba(0,0,0,0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sector-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Popup */
+.sector-popup {
+  position: fixed;
+  top: 0; right: 0;
+  height: 100vh;
+  width: 100%;
+  max-width: 700px;
+  background: #111;
+  color: #fff;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: #222;
+}
+
+.popup-content {
+  padding: 2rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Heritage */
+.heritage-content blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
